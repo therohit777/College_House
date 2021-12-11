@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.homepage{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.705);   
+    background-image: url('../images/background.jpg');
+    background-size: contain;
+}
+header{
+    top:0;
+    position: sticky;
+}
+nav{
+    background-color: orangered;
+    display: flex;
+    justify-content: space-between;
+    height: 13vh;
+    position: relative;
+}
+.logoname{
+    color: #fff;
+    text-shadow: #000 1px 0 10px;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.logoname .logolnk{
+    color: #fff;
+    text-decoration: none;
+}
+.navitems{
+    width: 35%;
+}
+ul{
+    margin-right: 40px;
+    display: flex;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+}
+ul li{
+    margin-top: 5px;
+    list-style: none;
+}
+.specicon{
+    border: 50%;
+}
+.homenavlnk{
+    color: #fff;
+    text-shadow: #000 1px 0 10px;
+    font-size: 26px;
+}
+.hamburgmenu{
+    position: absolute;
+    visibility: hidden;
+}
+.hamburg{
+    color: white;
+    font-size: 10px;
+    margin-top: 13px;
+    text-shadow: #000 1px 0 10px;
+}
+@media screen and (max-width:1000px){
+    nav{
+        justify-content: center;
+    }
+    .logoname{
+        margin-left: 0;
+    }
+    .navitems{
+        position: absolute;
+        margin-top: 100px;
+        background-color: orangered;
+        border-radius: 12%;
+        margin-left: 70%;
+        padding-right: 0;
+        width: 150px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.616);
+        visibility: hidden;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-right: 0;
+    }
+    .dropanimate{
+        animation: navbars 1s ease-in-out normal;
+        visibility: visible;
+    }
+    @keyframes navbars {
+        from {
+            transform: translateY(-60px);
+        }
+        to{
+            transform: translateY(0px);
+        }
+        
+    }
+    .hamburgmenu{
+      visibility: visible;
+      margin-top: -1px;
+      margin-left: 75%;
+    }
+    .hamburg{
+        font-size: 40px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .logoname{
+        font-size: 35px;
+    }
+    .navitems{
+        margin-left: 60%;
+        width: 120px;
+    }
+    .hamburgmenu{
+        margin-top: 4px;
+    }
+    
+}

@@ -1,0 +1,78 @@
+.signuppage{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.705);    
+}
+.signup{
+    height: 72vh;
+    width: 30%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.616);
+}
+.sincont1{
+    background-color: rgb(26, 24, 24);
+    height: 75%;
+}
+.sincont2{
+    background-color: orangered;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signtxt1{
+    color: white;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 28px;
+    padding-top: 10px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.signtxt2{
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.signinput{
+    width: 86%;
+    display: block;
+    background-color: rgba(128, 128, 128, 0.342);
+    border: none;
+    padding: 9px 6px ;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+}
+.signbtn{
+    padding: 11px 22px ;
+    border: none;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.61);
+    cursor: pointer;
+}
+.sinbacklin{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.errmess{
+    color: red;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .signup{
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px) {
+    .signup{
+        width: 80%;
+    }
+}
